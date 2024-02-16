@@ -1,0 +1,55 @@
+body{
+    /* background-image: radial-gradient(circle, #20061d 0%, #09032f 100%); */
+}
+.shimmerMain{
+    height:100vh;
+    width:100%;
+    background-image: radial-gradient(circle, #0b6b39 0%, #09032f 100%);
+  
+}
+
+.loader{
+    height:30px;
+    width:30px;
+    animation:shimmer 2s linear infinite;
+    border-top:3px solid blue;
+    border-bottom:3px solid blue;
+    border-left:3px solid blue;
+    border-right:3px solid rgb(0, 0, 0);
+    border-radius:50%;
+    
+   
+    
+
+}
+.shimmer p{
+    white-space: nowrap;
+}
+.shimmer{
+    height:100px;
+    width:fit-content;
+    /* border:1px solid white; */
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: 4px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    gap:20px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%)
+    
+
+    
+}
+@keyframes shimmer{
+    0%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg)
+    }
+}

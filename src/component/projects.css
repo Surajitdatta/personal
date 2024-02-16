@@ -1,0 +1,145 @@
+.projects{
+    height:fit-content;
+    width:70%;
+    /* border:1px solid red; */
+    color:white;
+    margin:auto;
+    font-family: monospace;
+    margin-top: 250px;
+}
+.projectsContent{
+
+    
+
+}
+.projectsContent h2{
+    font-weight: lighter;
+    letter-spacing: 3px;
+    position:relative;
+    display: inline-block;
+}
+.projectsContent h2::before{
+    position:absolute;
+    content:"";
+    height:1.5px;
+    width:110%;
+    background:rgb(240, 236, 239);
+    bottom:-8px;
+
+}
+.projectsCard{
+    height: fit-content;
+    width:fit-content;
+    /* border:1px solid rgb(42, 145, 42); */
+    margin:30px auto;
+    
+    display:grid;
+    grid-template-columns: auto auto;
+   
+    place-items: center;
+    grid-row-gap: 10px; 
+    grid-column-gap: -10px;
+}
+.projectCard{
+    height:fit-content;
+  
+    width:250px;
+    padding:12px;
+    background-image: linear-gradient(to left, black, black, rgb(56, 56, 56));
+    background: linear-gradient(-45deg, #22083b 0%, #1a0505 100% );
+    transform: translate3d(0px, 17px, 0) scale(0.91);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    gap:20px;
+    position:relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.projectImg{
+    height:70px;
+    width:70px;
+    border:1px solid white;
+    border-radius: 50%;
+}
+.projectImg img{
+    border-radius:50%;
+}
+.projectTitle{
+    height:fit-content;
+    width:fit-content;
+    /* border:1px solid white; */
+    object-fit: cover;
+    white-space: nowrap;
+}
+.projectTitle a{
+    color:white;
+}
+.projectDes{
+    height:fit-content;
+    width:30%;
+    border:1px solid white;
+    
+}
+.tech{
+    width:fit-content;
+    opacity: 1;
+}
+.hide{
+    height:120px;
+    width:70%;
+    background:rgb(13, 1, 1);
+    position:relative;
+    top:-100%;
+    border-radius: 30px;
+    transition: 1s;
+    cursor: pointer;
+}
+.hideImg{
+    height:120px;
+    width:100%;
+    position: absolute
+
+}
+.hide img{
+    border-radius: 30px;;
+}
+.projectCard:hover{
+    
+    transform: scale(.9)
+    
+}
+.projectCard:hover > .projectTitle {
+   
+    /* display:none; */
+}
+
+.projectCard:hover > .hide{
+    top:0%;
+    
+}
+
+@media only screen and (max-width: 767px){
+    .projects{
+       width:90%
+    }
+    .projectsContent{
+       text-align: center;
+    }
+    .projectsCard{
+        align-items: center;
+        grid-template-columns: auto;
+    }
+    .projectCard{
+        width:250px;
+        height:fit-content;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .projects{
+        width:80%;
+    }
+    
+}

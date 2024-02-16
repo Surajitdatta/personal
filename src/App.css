@@ -1,0 +1,14 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+body{
+  background: rgb(1, 0, 4);
+     /* background:rgb(211, 133, 85);  */
+  
+   /* background: radial-gradient(circle, #010001 0%, #6965b5 100%); */
+  
+   scroll-behavior: smooth;
+  
+}

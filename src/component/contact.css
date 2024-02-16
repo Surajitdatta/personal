@@ -1,0 +1,91 @@
+.contact{
+    height:fit-content;
+    width:70%;
+    /* background-color: blue; */
+    margin:20px auto;
+    color:white;
+    background-repeat: no-repeat;
+    margin-top:250px;
+    
+    
+}
+.contactContent{
+    height:fit-content;
+    width:100%;
+   
+    white-space: nowrap;
+    
+}
+.contactContent h2{
+    
+    color:white;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    position:relative;
+    display: inline-block;
+    white-space: nowrap;
+    font-family:monospace;
+}
+.contactContent h2::after{
+    position:absolute;
+    content:"";
+    height:1.5px;
+    width:110%;
+    background:white;
+    left:0px;
+    bottom:-8px;
+    
+}
+.contactCard{
+    height:fit-content;
+    width:100%;
+    /* border:1px solid white; */
+    margin-top:30px;
+    display:flex;
+    justify-content: center;
+    gap:30px;
+    align-items: center;
+
+}
+.contactParaCard{
+    height:fit-content;
+    width:40%;
+    /* border:1px solid white; */
+    text-align:justify ;
+
+}
+.contactParaCard p{
+    font-family:monospace;
+}
+.contactIcon{
+    height:fit-content;
+    width:fit-content;
+    /* border:1px solid white; */
+    display:flex;
+    gap:10px;
+}
+.icons{
+    font-size: 25px;
+    cursor: pointer;
+}
+.icons a{
+    color:white;
+}
+@media only screen and (max-width: 767px){
+    .contactParaCard{
+        /* background:yellow; */
+        text-align: center;
+        width:100%;
+    }
+    .contactContent{
+        text-align: center;
+
+    }
+    .contactCard{
+        /* background-color: brown; */
+        flex-direction:column-reverse;
+    }
+    .contactCard{
+        gap:20px;
+    }
+}

@@ -1,0 +1,185 @@
+.exp{
+    height:fit-content;
+    width:70%;
+    /* border:1px solid rgb(231, 216, 216); */
+    margin: auto;
+    box-shadow: 5px 5px 10px 0px rgb(14, 14, 52);;
+    margin-top:250px;
+
+
+}
+.expContent{
+    height:fit-content;
+    width:100%;
+    /* border:1px solid white; */
+    white-space: nowrap;
+    
+
+}
+.expContent h2{
+    
+    color:white;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    position:relative;
+    display: inline-block;
+    white-space: nowrap;
+}
+.expContent h2::after{
+    position:absolute;
+    content:"";
+    height:1.5px;
+    width:110%;
+    background:white;
+    left:0px;
+    bottom:-8px;
+}
+.expCard{
+    height:fit-content;
+    width:100%;
+    /* border:1px solid white; */
+    display:flex;
+    gap:40px;
+    padding-left: 100px;
+    padding-top:40px;
+    /* background:maroon; */
+    
+    
+}
+.eduCard{
+    height:fit-content;
+    width:35%;
+    /* border:1px solid white; */
+    /* background:green; */
+   
+
+}
+.skillCard{
+    height:fit-content;
+    width:35%;
+    /* border:1px solid white;
+    background-color: red;; */
+    
+
+}
+.year{
+    height:40px;
+    width:90%;
+    /* border:1px solid white; */
+    display:flex;
+    gap:10px;
+    color:white;
+    
+}
+.eduIcon{
+    height:30px;
+    width:30px;
+    /* border:1px solid red; */
+    margin-top:6px;
+    font-size: 30px;
+    
+}
+.eduYear{
+    height:30px;
+    width:120px;
+    /* border:1px solid rgb(168, 11, 11); */
+    margin-top: 6px;
+    font-family: monospace;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    opacity:.7;
+    white-space: nowrap;;
+}
+.eduContent{
+    height:150px;
+    width:100%;
+    /* border:1px solid white; */
+    /* background-color: rgb(39, 99, 99); */
+    display:flex;
+    margin-top:10px;
+
+}
+.stapper{
+    height:100px;
+    width:2px;
+    background:white;
+    margin-left: 14px;
+
+}
+.stapperContent{
+    height:fit-content;
+    width:80%;
+    /* border:1px solid blueviolet; */
+    /* background-color: blueviolet; */
+    margin-left:25px;
+    color:white;;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+@media only screen and (max-width: 767px) {
+    .expContent{
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 1px;
+
+    }
+    .expCard{
+        padding-left:0px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .eduCard{
+        width:80%
+    }
+    .skillCard{
+        width:80%;
+        /* background:blue; */
+        /* display:flex;
+        justify-content: center; */
+        
+    }
+    .expContent h2::after{
+        position:absolute;
+        content:"";
+        height:1.5px;
+        width:100%;
+        background:white;
+        left:0px;
+        bottom:-8px;
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .expCard{
+        
+        padding-left:0px;
+        justify-content: center;
+        /* flex-direction: column; */
+        align-items: center;
+        gap:15px;
+       
+    }
+    .exp{
+        /* background-color: brown; */
+    }
+    .eduCard{
+        min-width:45%;
+        max-width:40%;
+        /* background-color: bisque; */
+        
+    }
+    .skillCard{
+        min-width:45%;
+        max-width:40%;
+        /* background-color: aquamarine; */
+    }
+    
+}
+@media only screen and (min-width: 992px) and (max-width: 1900px) {
+    .exp{
+        /* background-color: aquamarine; */
+    }
+}
