@@ -21,14 +21,15 @@
     width: 50px;
     
     display:flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap:8px;
     align-items: center;
     flex-direction: column;
     margin-left:30px;
 
 }
 .contentBio{
-    width:20%;
+    width:35%;
     height:200px;
    
     text-align: center;

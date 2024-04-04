@@ -15,7 +15,7 @@ import { MdCastForEducation } from "react-icons/md";
 const Bio = () => {
     
     const[text, setText] = useState("")
-    const texts = " I am creative designer based on India and i am passionate and dedicated to my work. 🤚🤚";
+    const texts = " I am Java Fullstack developer and skilled graphics designer based on India and i am passionate and dedicated to my work. 🤚🤚";
     useEffect(()=>{
         const myText = (index) =>{
             if(index<= texts.length){
@@ -55,29 +55,27 @@ const Bio = () => {
     </div>
     
     <div className='bio'>
-        
-
         <div className="social">
             <div className='insta'>
-                <a href="https://www.instagram.com/austenite_selfish_?igsh=YzVkODRmOTdmMw=="><GrInstagram/></a>
+                <a href="https://www.instagram.com/mrbarnwal_?igsh=NnE0MDFldHVtajhy"><GrInstagram/></a>
             </div>
-            <div className='git'>
+            {/* <div className='git'>
                 <a href="https://github.com/Surajitdatta"><FaGithub /></a>
 
                 
-            </div>
+            </div> */}
             <div className='linkedin'>
-                <a href="https://www.linkedin.com/in/surajit-datta-751600155"> <FaLinkedin/></a>
+                <a href="https://www.linkedin.com/in/himanshushekhar-dev"> <FaLinkedin/></a>
                
             </div>
 
         </div>
         {/* content bio start */}
         <div className="contentBio">
-            <h2>Surajit Datta</h2>
+            <h2>Himanshu Shekhar</h2>
 
             <pre>
-                    ...Front End Developer
+                    ...Java Fullstack Developer
             </pre><br/><br/>
             <div className='text'>
             <p>
@@ -97,7 +95,7 @@ const Bio = () => {
         </div>
         {/* image div start */}
         <div className="bioImg">
-            <img src={IT}  height="100%" width="100%"   />
+            <img src="https://i.pinimg.com/originals/33/f6/87/33f687c5b8da38478d2973ac5f701996.png"  height="100%" width="100%"   />
 
         </div>
         

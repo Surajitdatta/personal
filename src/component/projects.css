@@ -1,15 +1,13 @@
 .projects{
     height:fit-content;
     width:70%;
-    /* border:1px solid red; */
     color:white;
     margin:auto;
     font-family: monospace;
-    margin-top: 250px;
+    margin-top: 0px;
+    /* background-color: aqua; */
 }
 .projectsContent{
-
-    
 
 }
 .projectsContent h2{
@@ -27,31 +25,33 @@
     bottom:-8px;
 
 }
-.projectsCard{
-    height: fit-content;
+
+.projectsCard {
+    display: flex;
     width:fit-content;
-    /* border:1px solid rgb(42, 145, 42); */
-    margin:30px auto;
-    
-    display:grid;
-    grid-template-columns: auto auto;
-   
-    place-items: center;
-    grid-row-gap: 10px; 
-    grid-column-gap: -10px;
+    gap: 10px; 
+    justify-content:start;
+    /* background-color: brown; */
 }
+
+.projectsCard > div:last-child {
+    /* grid-column: span 2;  */
+}
+
 .projectCard{
     height:fit-content;
-  
+    margin:20px auto;
     width:250px;
     padding:12px;
-    background-image: linear-gradient(to left, black, black, rgb(56, 56, 56));
-    background: linear-gradient(-45deg, #22083b 0%, #1a0505 100% );
+    /* background-image: linear-gradient(to left, black, black, rgb(56, 56, 56)); */
+    /* background: linear-gradient(-45deg, #22083b 0%, #1a0505 100% ); */
     transform: translate3d(0px, 17px, 0) scale(0.91);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     border-radius: 20px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    /* box-shadow: 5px 4px 6px 8px grey; */
     
     gap:20px;
     position:relative;
@@ -130,16 +130,37 @@
     }
     .projectsCard{
         align-items: center;
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
     }
     .projectCard{
         width:250px;
         height:fit-content;
     }
+    .projectsCard{
+        height: fit-content;
+        width:fit-content;
+        margin:30px auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px){
     .projects{
-        width:80%;
+        width:fit-content;
+        /* background:red; */
+    }
+    
+    .projectsCard {
+        
+        display: flex;
+        gap:20px;
+        
+        justify-content: center;
+    }
+    
+    .projectsCard > div:last-child {
+        grid-column: span 2; 
     }
     
 }

@@ -1,0 +1,58 @@
+.graphicsWorkMain{
+    width:100%;
+    color:white;
+
+}
+.graphicsWorkMain h1{
+    /* width:fit-content; */
+    transition-property: opacity, transform;
+    font-family: "Rubik_Scribble variant0", Tofu;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    opacity: 1;
+    line-height: initial;
+    transition-duration: 350ms;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.workCardGroup{
+    height:fit-content;
+    width:70%;
+    /* border:1px solid white; */
+    margin:20px auto;
+    
+}
+.gCards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content: center;
+    
+    
+}
+.gCard{
+    
+    width:130px;
+    
+    text-align: center;
+    font-family: serif;
+    
+}
+.gCard img{
+    border-radius: 20px;
+}
+.gCard button{
+   height:25px;
+   width:100px;
+   background: linear-gradient(#e66465, #9198e5);
+   border:0px solid red;
+   border-radius:10px;
+   margin-top: 10px;
+   color:wheat;
+
+
+}

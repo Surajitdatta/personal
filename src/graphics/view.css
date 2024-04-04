@@ -1,0 +1,77 @@
+.view{
+    height:fit-content;
+    color:white;
+    width:50%;
+    /* border:1px solid rgb(177, 88, 88); */
+    
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%)
+    
+    
+    
+}
+.viewProduct{
+    
+    display:flex;
+    /* border:1px solid white; */
+    justify-content: center;
+    gap:20px;
+    align-items: center;
+    /* flex-wrap: wrap; */
+
+}
+.view img{
+    border-radius: 20px;
+    box-shadow: 8px 8px 10px 6px rgb(2, 2, 10);
+    
+}
+.viewContent{
+    height: fit-content;
+    width: fit-content;
+    font-family: Reddit Mono;
+
+}
+.view button{
+    height:25px;
+    border:0px solid red;
+    border-radius: 12.5px;
+    width: 100px;
+    margin-top: 10px;
+    background: linear-gradient(#e66465, #9198e5);
+    color:white;
+    
+
+}
+.social1{
+    width:fit-content;
+    margin:20px auto;
+    display:flex;
+    gap:10px;
+
+}
+.h{
+    width:fit-content;
+    height: 100px;
+    margin:20px auto;
+}
+@media only screen and (max-width: 768px) {
+    .view{
+        width:80%;
+    }
+    .viewProduct{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .view{
+        width:70%;
+    }
+  }
+  
+  

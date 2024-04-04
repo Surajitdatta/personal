@@ -1,0 +1,55 @@
+.iconDiv{
+    height:fit-content;
+    width:fit-content;
+    /* border:1px solid white; */
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    margin:70px auto;
+    /* position:absolute; */
+    left:25%;
+
+
+    
+    
+}
+.iconDiv ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap :50px;
+    
+    
+
+}
+.iconDiv ul li{
+    list-style: none;
+    
+
+}
+.icon{
+    font-size: 12px;
+    position: relative;
+    
+    left:-20px;
+    animation: icon 2s linear infinite;
+
+
+}
+@keyframes icon{
+    0%{
+        left:-20px;
+
+    }
+    50%{
+        left:0px;
+        
+    }
+}
+.arrowLink{
+    color:white;
+    text-decoration: none;
+    
+}

@@ -6,7 +6,7 @@ const Shimmer=()=>{
 
         <div className="shimmer">
             <div className="shimmerContent">
-                <p style={{color:""}}>
+                <p >
                 Welcome to My Portfolio
                 </p>
 

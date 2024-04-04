@@ -8,24 +8,25 @@ const Contact = () => {
   const[scrollValue, setScrollValue] = useState()
     const scrollRef = useRef(null)
     useEffect(()=>{
-        window.addEventListener('scroll', handleScroll=>{
+        const handleScroll=()=>{
+          if (scrollRef.current) {
             
            
-            if(window.scrollY>4300){
+            if(window.scrollY>3500){
                 if(window.innerWidth<765){
                     // scrollRef.current.style.background="green";
                     scrollRef.current.style.transition="1s";
                     scrollRef.current.style.marginTop="50px"
                 
             }  
-        }  else if(window.scrollY>2220){
+        }  else if(window.scrollY>1634){
             if(window.innerWidth>769 && window.innerWidth<985){
                 // scrollRef.current.style.background="blue";
                 scrollRef.current.style.transition="1s";
                 scrollRef.current.style.marginTop="50px"
 
             }
-        } else if(window.scrollY>2100){
+        } else if(window.scrollY>1496){
             if(window.innerWidth>992 && window.innerWidth<1900){
                 // scrollRef.current.style.background="white";
                 scrollRef.current.style.transition="2s";
@@ -34,7 +35,9 @@ const Contact = () => {
             }
         } 
         
-        })
+        }}
+        window.addEventListener('scroll', handleScroll);
+        
 
     },[])
   return (
@@ -51,17 +54,17 @@ const Contact = () => {
           </div>
           <div className='contactIcon'>
             <div className='icons'>
-            <a href="mailto:bubuldatta91314@gmail.com"><MdOutlineMail/></a>
+            <a href="mailto:burnwalhimanshu@gmail.com"><MdOutlineMail/></a>
               
 
             </div>
             <div className='icons'>
-            <a href="tel:+917908216496"><FiPhone/></a>
+            <a href="tel:+918617829313"><FiPhone/></a>
               
 
             </div>
             <div className='icons'>
-              <a href="https://www.linkedin.com/in/surajit-datta-751600155"><CiLinkedin/></a>
+              <a href="https://www.linkedin.com/in/himanshushekhar-dev"><CiLinkedin/></a>
 
             </div>
             

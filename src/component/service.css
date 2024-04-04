@@ -1,8 +1,8 @@
 .serviceMain{
     height:fit-content;
-    width:100%;
+    width:fit-content;
     /* background-color: brown ; */
-    margin-top:250px;
+    margin:auto;
    
    
 }
@@ -31,24 +31,25 @@
 }
 .serviceCard{
     height:fit-content;
-    width:70%;
+    width:fit-content;
+    /* background-color: aquamarine; */
+    display:grid;
+    grid-template-columns: auto auto;
+   
+    margin: 20px auto;
     
-    display:flex;
-    margin:30px auto;
-    /* justify-content: start; */
-    padding-left: 100px;
-    align-items: center;
-    gap:20px;
-
-    
+    place-items: center;
+    grid-gap:0px;
+    padding-bottom:20px;
     
 }
 .card{
-    height:200px;
+    height:220px;
     width:200px;
     border-radius: 20px;
     /* box-shadow: rgb(13, 101, 175) 0px 50px 100px -20px, rgba(30, 37, 110, 0.889) 0px 20px 0px -30px, rgba(10, 37, 64, 0.35) 0px -2px 1px 0px inset; */
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin-top: 20px;
 }
 .cardImg{
     height:30px;
@@ -79,15 +80,41 @@
 }
 @media only screen and (max-width: 767px) {
     .serviceMain{
+        height:fit-content;
+        width:fit-content;
+        /* background-color: brown ; */
+        margin:auto;
+       
+       
+    }
+    .serviceContent{
+        color:white;
+        font-weight: lighter;
+        width:70%;
+        height:fit-content;
+       
+        margin:auto;
+    }
+
+
+    
+    .serviceMain{
         /* background-color: aqua; */
+        margin: auto;
+        
     }
     .serviceContent{
         width:100%;
         text-align: center;
+        
     }
     .serviceCard{
         flex-direction: column;
         padding-left: 0px;
+        grid-template-columns: auto;
+    }
+    .card{
+        height:240px;
     }
     
 }
@@ -96,7 +123,7 @@
         /* background-color: rgb(109, 25, 173); */
     }
     .serviceCard{
-        width:70%;
+        width:fit-content;
         gap:10px;
     }
 

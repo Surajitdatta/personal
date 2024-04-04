@@ -62,7 +62,7 @@
     width:130px;
     border-radius: 20px;
     border:0px solid red;
-    background-color: brown;
+    background-color: rgb(113, 73, 201);
     color:white;
     font-family:monospace;
 
@@ -103,6 +103,13 @@
     width:94%;
     border-radius:3.5px;
     background-color: rgb(165, 198, 59);
+}
+.graphicsPer{
+    height:7px;
+    width:90%;
+    background-color: aquamarine;
+    border-radius:3.5px;
+
 }
 #about{
     /* background-color: rgb(226, 71, 32); */

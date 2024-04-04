@@ -40,7 +40,7 @@ const About = () => {
          </div>
          <div className="aboutCardContent">
             <div className="para">
-              <p>I am Surajit Datta , React front end developer from India , I have rich skills in web design and react front end technology.</p><br/>
+              <p>I am Himanshu Shekhar , Java Fullstack developer from India , I have rich skills in web design , Java , SQL , Manual testing and Graphic design.</p><br/>
               
               <a href={cv} download>
               <button style={{ cursor: "pointer" }}>Download CV</button>
@@ -50,7 +50,7 @@ const About = () => {
               
             </div>
             <div className="graph">
-                <b>UI design</b>
+                <b>Java Fullstack</b>
                 <div className='ui'>
                     <div className='uiPer'>
                       
@@ -58,7 +58,7 @@ const About = () => {
 
                 </div><br/>
 
-                <b>Javascript</b>
+                <b>SQL Server</b>
                 <div className='ui'>
                     <div className='jsPer'>
 
@@ -66,9 +66,25 @@ const About = () => {
 
                 </div><br/>
 
-                <b>React JS</b>
+                <b>Manual Testing</b>
                 <div className='ui'>
                     <div className='reactPer'>
+
+                    </div>
+
+                </div><br/>
+
+                <b>Graphic Designer</b>
+                <div className='ui'>
+                    <div className='graphicsPer'>
+
+                    </div>
+
+                </div><br/>
+
+                <b>HTML , CSS</b>
+                <div className='ui'>
+                    <div className='graphicsPer'>
 
                     </div>
 

@@ -1,13 +1,21 @@
 import React from 'react'
 import "./Header.css"
+import { FaRegLightbulb } from "react-icons/fa";
+import { useState } from 'react';
+const Header = ({bg}) => {
+  const[state, setState] = useState(true)
+  const lightHandlers = ()=>{
+    setState(!state)
+    bg(state)
+   
 
 
-const Header = () => {
+  }
   return (
     <>
         <div className="header">
-            <div className='logo'>
-              SD.
+            <div className='logo' onClick={lightHandlers}>
+              HS.
             </div>
             <div className='lists'>
                 <ul>
@@ -17,7 +25,9 @@ const Header = () => {
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li onClick={lightHandlers}><FaRegLightbulb /></li>
                 </ul>
+                
 
             </div>
 
